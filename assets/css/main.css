@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma/Tahoma_regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'TahomaBold';
+    src: url('../fonts/Tahoma/Tahoma_bold.ttf') format('ttf');
+}
+
+:root {
+    --red: #d30000;
+}
+
+* {
+    font-family: 'Tahoma';
+    font-weight: normal;
+    font-style: normal;
+}
+
+*::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: var(--red);
+}
+
+*::selection {
+    color: white;
+    background: var(--red);
+}
