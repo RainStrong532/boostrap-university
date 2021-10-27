@@ -59,35 +59,51 @@
         </button>
 
             <div class="collapse navbar-collapse position-relative py-1 d-flex justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-flex justify-content-between">
                     <li class="nav-item active">
-                        <a class="nav-link text-white mx-1 py-2 px-4 rounded" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white mx-1 py-2 px-4 rounded text-center" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Giới thiệu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item text-red" href="#">Lịch sử - Truyền thống</a>
+                            <a class="dropdown-item text-red" href="#">Tầm nhìn - Sứ mệnh</a>
+                            <a class="dropdown-item text-red" href="#">Ý nghĩa logo Học Viện</a>
+                            <a class="dropdown-item text-red" href="#">Giảng viên</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tin tức
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-red" href="#">Sự kiện</a>
+                            <a class="dropdown-item text-red" href="#">Thông báo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ngành học
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-red" href="#">Công nghệ thông tin</a>
+                            <a class="dropdown-item text-red" href="#">Đa phương tiện</a>
+                            <a class="dropdown-item text-red" href="#">Điện tử viễn thông</a>
+                            <a class="dropdown-item text-red" href="#">Kinh tế</a>
+                            <a class="dropdown-item text-red" href="#">Công nghệ tài chính</a>
+                            <a class="dropdown-item text-red" href="#">Thương mại điện tử</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Tin tức</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Tuyển sinh</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Ngành học</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Sinh viên</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Tuyển sinh</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Sinh viên</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Liên hệ</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Liên hệ</a>
                     </li>
                 </ul>
                 <a class="search py-2 px-3 rounded" href="#">
@@ -132,18 +148,22 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="btn-navigate">
+                        <i class="fa fa-chevron-left display-5"></i>
+                    </span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="btn-navigate">
+                        <i class="fa fa-chevron-right display-5"></i>
+                    </span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </section>
 
         <!-- Section 2 -->
-        <section class="reasons py-4">
+        <section class="reasons py-4 shadow-sm">
             <div class="container">
                 <h3 class="text-uppercase text-white text-center mb-4">
                     VÌ SAO 25.000+ SINH VIÊN CHỌN PTIT?
@@ -200,7 +220,35 @@
         <div class="container">
             <hr/>
         </div>
+
         <!-- Section 4 -->
+        <!-- lecturers program -->
+
+        <section class="lecturers mt-4">
+            <div class="container">
+                <h3 class="heading font-family-bold" data-aos="fade-up">
+                    Giảng viên
+                    <div class="line line--red mt-1 line--w-8"></div>
+                </h3>
+                <div class="row" data-aos="fade-up">
+                    <div class="col-4">
+                        <div class="bg-white d-flex flex-column align-items-center rounded-lg shadow-sm p-3">
+                            <div class="card-220 rounded-circle overflow-hidden bg-light">
+                                <img src="assets/images/Hà Thị Hồng Ngân.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="mt-3">
+                                <h6 class="text-center mb-0 font-family-bold">Hà Thị Hồng Ngân</h6>
+                                <p class="text-center text-black-50 text-desc mb-0">Abc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <hr/>
+        </div>
+        <!-- Section 5 -->
         <!-- News -->
 
         <section class="news mt-4">
@@ -336,7 +384,7 @@
         <div class="container">
             <hr/>
         </div>
-        <!-- Section 5-->
+        <!-- Section 6-->
         <!-- Notification program -->
 
         <section class="notify mt-4">
@@ -416,7 +464,7 @@
         <div class="container">
             <hr/>
         </div>
-        <!-- Section 6 -->
+        <!-- Section7 -->
 
         <section class="mt-4">
             <div class="container">
@@ -426,13 +474,13 @@
                             Video
                             <div class="line line--red mt-1 line--w-4"></div>
                         </h3>
-                        <iframe width="700" height="393.75" src="https://www.youtube.com/embed/f-tlfYppqQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="mt-2" width="700" height="393.75" src="https://www.youtube.com/embed/f-tlfYppqQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="col-4">
                         <h3>Đối tác
                             <div class="line line--red mt-1 line--w-4"></div>
                         </h3>
-                        <div class="bg-light">
+                        <div class="bg-light mt-2">
                             <div id="carouselIndicators" class="carousel slide" data-touch="false" data-interval="3000" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item logo-item active">

@@ -19,6 +19,15 @@
   background-color: var(--red) !important;
 }
 
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: var(--red);
+}
+
 .navbar .nav-item.active .nav-link {
   font-family: 'Tahoma-bold';
   background-color: rgba(0, 0, 0, 0.08);
@@ -48,10 +57,29 @@
   right: 0;
 }
 
+.btn-navigate {
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .reasons {
-  background: #d30000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c80000), color-stop(70%, rgba(250, 0, 0, 0.9)));
-  background: linear-gradient(180deg, #c80000 0%, rgba(250, 0, 0, 0.9) 70%);
+  background: red;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(26%, #d30000), to(#e43b21));
+  background: linear-gradient(180deg, #d30000 26%, #e43b21 100%);
+}
+
+.reasons__title {
+  cursor: context-menu;
 }
 
 .footer__column .icon-footer {
