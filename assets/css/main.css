@@ -1,30 +1,196 @@
-@font-face {
-    font-family: 'Tahoma';
-    src: url('../fonts/Tahoma/Tahoma_regular.ttf') format('ttf');
+.line {
+  width: 100%;
+  height: 5px;
 }
 
-@font-face {
-    font-family: 'TahomaBold';
-    src: url('../fonts/Tahoma/Tahoma_bold.ttf') format('ttf');
+.line--red {
+  background-color: var(--red);
 }
 
-:root {
-    --red: #d30000;
+.line--w-4 {
+  width: 4rem;
 }
 
-* {
-    font-family: 'Tahoma';
-    font-weight: normal;
-    font-style: normal;
+.line--w-8 {
+  width: 8rem;
 }
 
-*::-moz-selection {
-    /* Code for Firefox */
-    color: white;
-    background: var(--red);
+.navbar {
+  background-color: var(--red) !important;
 }
 
-*::selection {
-    color: white;
-    background: var(--red);
+.navbar .nav-item.active .nav-link {
+  font-family: 'Tahoma-bold';
+  background-color: rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
+
+.navbar .nav-item .nav-link {
+  border-bottom: 2px solid var(--red);
+}
+
+.navbar .nav-item:hover .nav-link {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .search:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .search.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar .search-box {
+  top: 100%;
+  right: 0;
+}
+
+.reasons {
+  background: #d30000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c80000), color-stop(70%, rgba(250, 0, 0, 0.9)));
+  background: linear-gradient(180deg, #c80000 0%, rgba(250, 0, 0, 0.9) 70%);
+}
+
+.footer__column .icon-footer {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer__column .icon-footer:hover {
+  text-decoration: none;
+}
+
+.footer__column .icon-footer i {
+  font-size: 2rem;
+}
+
+.footer__column .icon-footer:nth-child(1) i {
+  color: var(--blue-fb);
+}
+
+.footer__column .icon-footer:nth-child(2) i {
+  color: var(--red-youtube);
+}
+
+.footer__column .icon-footer:nth-child(3) i {
+  color: var(--red-google-plus);
+}
+
+.news__content .card-title {
+  height: 6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.125rem;
+}
+
+.news__content .card-title:hover a {
+  color: var(--red);
+}
+
+.news__content .card__image {
+  overflow: hidden;
+}
+
+.news__content .card__image img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.news__content .card__image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.news__content .card__image:hover .card__image__mask {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.news__content .card__image:hover .card__image__overlay {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.news__content .card__image__mask {
+  width: 100%;
+  bottom: 0;
+  background: rgba(211, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  z-index: 15;
+}
+
+.news__content .card__image__overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.load-more:hover {
+  text-decoration: underline;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--red);
+  border: 2px solid var(--red);
+}
+
+.back-to-top:hover {
+  background-color: white;
+}
+
+.back-to-top:hover i {
+  color: var(--red);
+}
+
+.back-to-top i {
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.notify__link:hover {
+  color: var(--red);
+}
+
+.notify__date {
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  cursor: context-menu;
+}
+
+.notify__date:hover {
+  color: #ee0000;
+}
+
+.notify .card-body {
+  height: 8rem;
+}
+
+.logo-item img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
