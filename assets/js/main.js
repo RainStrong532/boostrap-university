@@ -24,3 +24,7 @@ backToTop.on("click", function(e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "slow");
 });
+
+$("#signup-advised").on("click", function(e) {
+    $("#liveToast").toast("show");
+})

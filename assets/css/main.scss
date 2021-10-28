@@ -224,3 +224,51 @@
         overflow: hidden;
     }
 }
+
+.lecturers__card {
+    img {
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(3deg);
+        }
+    }
+}
+
+.education {
+    img {
+        width: 100%;
+    }
+}
+
+.signup-button {
+    bottom: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #ee0000;
+    left: 0rem;
+    padding: 0.3rem 1rem;
+    padding-left: 0.2rem;
+    cursor: pointer;
+    width: 1.875rem;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    &.show {
+        width: 9.5rem;
+    }
+    &:hover {
+        background-color: var(--red);
+        width: 9.5rem;
+    }
+    i {
+        margin-right: 0.6rem;
+    }
+    span {
+        text-overflow: hidden;
+    }
+}

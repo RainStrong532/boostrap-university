@@ -86,3 +86,11 @@ hlml {
     align-items: center;
     justify-content: center;
 }
+
+.card-220 {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

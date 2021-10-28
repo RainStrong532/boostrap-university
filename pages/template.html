@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
     <title>Học viện Công nghệ Bưu chính Viễn thông</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../assets/vendor/bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.6.0-dist/css/bootstrap.min.css" />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="../assets/vendor/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.4-web/css/all.min.css" />
 
     <!-- External css files -->
-    <link rel="stylesheet" href="../assets/css/setup.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/setup.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- AOS css files -->
+    <link rel="stylesheet" href="assets/vendor/aos.css" />
 </head>
 
 <body>
@@ -26,7 +29,7 @@
             <div class="row">
                 <div class="col-9 d-flex">
                     <div>
-                        <img src="../assets/images/ptit-logo.png" alt="logo" />
+                        <img src="assets/images/ptit-logo.png" alt="logo" />
                     </div>
                     <div>
                         <h1 class="display-5">
@@ -56,35 +59,51 @@
         </button>
 
             <div class="collapse navbar-collapse position-relative py-1 d-flex justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-flex justify-content-between">
                     <li class="nav-item active">
-                        <a class="nav-link text-white mx-1 py-2 px-4 rounded" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white mx-1 py-2 px-4 rounded text-center" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Giới thiệu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item text-red" href="/pages/introductions/index.html">Lịch sử - Truyền thống</a>
+                            <a class="dropdown-item text-red" href="#">Tầm nhìn - Sứ mệnh</a>
+                            <a class="dropdown-item text-red" href="/pages/introductions/logo.html">Ý nghĩa logo Học Viện</a>
+                            <a class="dropdown-item text-red" href="#">Giảng viên</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tin tức
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-red" href="#">Sự kiện</a>
+                            <a class="dropdown-item text-red" href="#">Thông báo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white py-2 px-4 rounded text-center mx-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ngành học
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-red" href="#">Công nghệ thông tin</a>
+                            <a class="dropdown-item text-red" href="#">Đa phương tiện</a>
+                            <a class="dropdown-item text-red" href="#">Điện tử viễn thông</a>
+                            <a class="dropdown-item text-red" href="#">Kinh tế</a>
+                            <a class="dropdown-item text-red" href="#">Công nghệ tài chính</a>
+                            <a class="dropdown-item text-red" href="#">Thương mại điện tử</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Tin tức</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Tuyển sinh</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Ngành học</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Sinh viên</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Tuyển sinh</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Sinh viên</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-2 px-4  mx-1 rounded" href="#">Liên hệ</a>
+                        <a class="nav-link text-white py-2 px-4  mx-1 rounded text-center" href="#">Liên hệ</a>
                     </li>
                 </ul>
                 <a class="search py-2 px-3 rounded" href="#">
@@ -92,7 +111,7 @@
                 </a>
                 <form class="search-box form-inline my-2 my-lg-0 d-none position-absolute bg-light py-3 px-4 rounded shadow-lg top" id="search-box">
                     <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Tìm</button>
+                    <button class="btn btn-outline-danger my-2 my-sm-0 search-btn" type="submit">Tìm</button>
                 </form>
             </div>
         </div>
