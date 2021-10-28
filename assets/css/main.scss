@@ -4,6 +4,9 @@
     &--red {
         background-color: var(--red);
     }
+    &--yellow {
+        background-color: rgb(255, 224, 0);
+    }
     &--w {
         &-4 {
             width: 4rem;
@@ -302,6 +305,16 @@
     justify-content: center;
 }
 
+.question {
+    a {
+        text-decoration: none;
+        color: var(--red);
+        &:hover {
+            color: #ee0000;
+        }
+    }
+}
+
 
 /* responsive */
 
@@ -356,6 +369,88 @@
     }
 }
 
+.container {
+    &__news {
+        &__image {
+            &__mask {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+                background: rgba($color: #000, $alpha: 0.5);
+                z-index: 15;
+            }
+            &__header {
+                h2 {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 20;
+                }
+                img {
+                    width: 100%;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}
+
+.page-link {
+    &.bg-red {
+        transition: all 0.1s ease-in-out;
+        &:hover {
+            background-color: #FFF;
+            color: var(--red)!important;
+        }
+    }
+}
+
+.sidebar {
+    &__item {
+        &:hover {
+            .sidebar__item__mask {
+                background: rgba($color: #000, $alpha: 0.5);
+            }
+            p {
+                text-decoration: none!important;
+            }
+        }
+        &__mask {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000, $alpha: 0);
+            z-index: 15;
+            transition: all 0.3s ease-in-out;
+        }
+        a {
+            &:hover {
+                color: var(--red)!important;
+            }
+        }
+        a {
+            color: #000!important;
+        }
+    }
+    &__list-item {
+        li {
+            &:hover {
+                a {
+                    color: var(--red)!important;
+                }
+            }
+            a {
+                color: #000!important;
+            }
+            .text-desc {
+                color: gray;
+            }
+        }
+    }
+}
+
 //992px
 @media (max-width: 992px) {
     .card {
@@ -398,6 +493,7 @@
             a.search {
                 width: 100%;
                 padding: 0.5rem 1.5rem!important;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -423,9 +519,27 @@
     }
 }
 
+@media(min-width: 1200px) {}
+
 .card {
     &-220 {
         width: 220px;
         height: 220px;
+    }
+    &-180 {
+        width: 180px;
+        height: 180px;
+    }
+    &-120 {
+        width: 120px;
+        height: 120px;
+    }
+    &-4 {
+        width: 4rem;
+        height: 4rem;
+    }
+    &-6 {
+        width: 6rem;
+        height: 6rem;
     }
 }

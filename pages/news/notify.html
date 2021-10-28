@@ -63,7 +63,7 @@
         </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="position-relative py-1 d-flex justify-content-between">
+                <div class="position-relative py-1 d-flex justify-content-between flex-grow-1">
                     <ul class="navbar-nav d-flex justify-content-between">
                         <li class="nav-item active">
                             <a class="nav-link text-white mx-1 py-2 px-4 rounded text-center" href="../../index.html">Trang chủ <span class="sr-only">(current)</span></a>
@@ -127,50 +127,304 @@
 
     <!-- content -->
     <div class="content bg-light pb-5">
-        <div class="container">
+        <div class="container__news container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-light mb-0">
                     <li class="breadcrumb-item"><a href="/pages/news/index.html">Tin tức</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sự kiện</li>
+                    <li class="breadcrumb-item active" aria-current="page">Thông báo</li>
                 </ol>
             </nav>
             <hr class="mt-0 mb-4" />
+            <div class="container__news__image__header position-relative mb-4">
+                <div class="container__news__image__mask position-absolute"></div>
+                <img src="../../assets/images/header.jpg" alt="header" />
+                <h2 class="position-absolute text-white font-weight-bold">Thông báo</h2>
+            </div>
             <div class="row">
                 <div class="col-12">
-                    <h3 class="heading font-family-bold display-5">
-                        Thông báo
+                    <h3 class="heading font-family-bold display-5 mb-3">
+                        Sự kiện
                         <div class="line line--red mt-1 line--w-4"></div>
                     </h3>
                 </div>
                 <div class="col-8">
-
-                    <div class="pagination">
+                    <div class="row">
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item news__content my-2  bg-white rounded-lg py-3 shadow-sm shadow-sm">
+                            <a href="#" class="text-decoration-none">
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="card-180 overflow-hidden d-flex justify-content-center align-items-center position-relative rounded-lg">
+                                            <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                            <div class="sidebar__item__mask position-absolute"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-shrink-1 ml-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="font-family-bold mb-0">
+                                                Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                            </p>
+                                            <p class="text-desc ">Trường Đại học MPT vừa thông báo chi trả học bổng kỳ 1 năm học 2020 – 2021 cho sinh viên...</p>
+                                        </div>
+                                        <p class="text-muted mb-0 text-right ">12/10/2021</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagination mt-5 w-100 d-flex justify-content-center">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
+                                    <a class="page-link bg-none border-0" href="javascript:void();" aria-label="Previous">
+                                        <i class="fas fa-angle-double-left text-red"></i>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link bg-red text-white mx-1 rounded-lg" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link bg-red text-white mx-1 rounded-lg" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link bg-red text-white mx-1 rounded-lg" href="#">3</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
+                                    <a class="page-link bg-none border-0" href="javascript:void();" aria-label="Next">
+                                        <i class="fas fa-angle-double-right text-red"></i>
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 sidebar">
+                    <h4 class="heading font-family-bold display-6">
+                        Gần đây
+                        <div class="line line--red mt-1 line--w-4"></div>
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 d-flex mb-3 sidebar__item">
+                            <a href="#">
+                                <div>
+                                    <div class="card-6 overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                                        <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                        <div class="sidebar__item__mask position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-1 ml-2">
+                                    <p class="mb-0 font-family-bold">
+                                        <a href="#" class="text-decoration-none">
+                                        Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                    </a>
+                                    </p>
+                                    <p class="text-muted mb-0">12/10/2021</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item">
+                            <a href="#">
+                                <div>
+                                    <div class="card-6 overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                                        <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                        <div class="sidebar__item__mask position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-1 ml-2">
+                                    <p class="mb-0 font-family-bold">
+                                        <a href="#" class="text-decoration-none">
+                                        Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                    </a>
+                                    </p>
+                                    <p class="text-muted mb-0">12/10/2021</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item">
+                            <a href="#">
+                                <div>
+                                    <div class="card-6 overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                                        <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                        <div class="sidebar__item__mask position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-1 ml-2">
+                                    <p class="mb-0 font-family-bold">
+                                        <a href="#" class="text-decoration-none">
+                                        Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                    </a>
+                                    </p>
+                                    <p class="text-muted mb-0">12/10/2021</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 d-flex mb-3 sidebar__item">
+                            <a href="#">
+                                <div>
+                                    <div class="card-6 overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                                        <img src="../../assets/images/news-1.jpg" style="width: auto; height: 100%" alt="hình ảnh">
+                                        <div class="sidebar__item__mask position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-1 ml-2">
+                                    <p class="mb-0 font-family-bold">
+                                        <a href="#" class="text-decoration-none">
+                                        Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số
+                                    </a>
+                                    </p>
+                                    <p class="text-muted mb-0">12/10/2021</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="heading font-family-bold display-6">
+                        Chuyên mục
+                        <div class="line line--red mt-1 line--w-4"></div>
+                    </h4>
+                    <div>
+                        <ul class="sidebar__list-item list-group list-group-flush">
+                            <li class="list-group-item bg-light">
+                                <a class="text-decoration-none" href="../introductions/index.html">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <a class="text-decoration-none" href="../news/index.html">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <a class="text-decoration-none" href="../majors/index.html">
+                                    Ngành học
+                                </a>
 
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <a class="text-decoration-none" href="../admissions.html">
+                                    Tuyển sinh
+                                </a>
+
+                            </li>
+                            <li class="list-group-item bg-light">
+
+                                <a class="text-decoration-none" href="../student.html">
+                                    Sinh viên
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <a class="text-decoration-none" href="../contact.html">
+                                    Liên hệ
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- back to top button-->
+    <div class="back-to-top d-flex align-items-center justify-content-center rounded shadow-sm">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <!-- footer -->
     <section class="footer bg-white shadow-lg pt-3 pb-5 border-bottom-red">
         <div class="container">
