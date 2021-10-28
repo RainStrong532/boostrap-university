@@ -13,6 +13,10 @@
     --blue-fb: #4267B2;
     --red-youtube: #FF0000;
     --red-google-plus: #db4a39;
+    --screen-small: 567px;
+    --screen-medium: 768px;
+    --screen-large: 992px;
+    --screen-xlarge: 1200px;
 }
 
 body,

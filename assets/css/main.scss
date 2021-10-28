@@ -272,3 +272,14 @@
         text-overflow: hidden;
     }
 }
+
+
+/* responsive */
+
+@media (max-width: var(--screen-small)) {}
+
+@media (max-width: var(--screen-medium)) {}
+
+@media (max-width: var(--screen-large)) {}
+
+@media (max-width: var(--screen-xlarge)) {}
