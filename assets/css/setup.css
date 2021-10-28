@@ -19,6 +19,10 @@
     --screen-xlarge: 1200px;
 }
 
+iframe {
+    width: 100%;
+}
+
 body,
 hlml {
     overflow: unset;
@@ -73,28 +77,4 @@ hlml {
 
 .h-5 {
     max-height: 5rem;
-}
-
-.card-180 {
-    width: 180px;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-120 {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-220 {
-    width: 220px;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
