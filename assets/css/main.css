@@ -19,6 +19,42 @@
   width: 8rem;
 }
 
+.bg-orange {
+  background-color: #c13726;
+}
+
+.bg-orange-2 {
+  background-color: #f34243;
+}
+
+.bg-yellow {
+  background-color: #ffe000;
+}
+
+.bg-purple {
+  background-color: #b92081;
+}
+
+.bg-blue {
+  background-color: #1f61d2;
+}
+
+.bg-green {
+  background-color: #19b85c;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-yellow {
+  border-color: #ffe000;
+}
+
 .navbar {
   background-color: var(--red) !important;
 }
@@ -339,6 +375,13 @@
 }
 
 /* responsive */
+@media (max-width: 567px) {
+  .topbar__info {
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+  }
+}
+
 @media (max-width: 768px) {
   .university-name {
     -webkit-box-orient: vertical;
@@ -368,6 +411,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
   }
   .topbar__info.row p:nth-child(2) {
     text-align: right;
@@ -450,6 +495,23 @@
 
 .sidebar__list-item li .text-desc {
   color: gray;
+}
+
+.time-route__tabs .nav-link {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.25rem;
+}
+
+.time-route__tabs .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.time-route__tabs .nav-link.active {
+  font-family: 'Tahoma-bold';
+  background-color: #ffe000;
+  color: #000 !important;
 }
 
 @media (max-width: 992px) {

@@ -79,6 +79,10 @@ hlml {
     max-height: 5rem;
 }
 
+.h-8 {
+    height: 8rem;
+}
+
 .bg-none {
     background-color: transparent;
 }
